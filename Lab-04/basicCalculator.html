@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>Enter Number 1 </td>
+            <td>:</td>
+            <td><input type="text" id="txtNum1"></td>
+        </tr>
+        <tr>
+            <td>Enter Number 2 </td>
+            <td>:</td>
+            <td><input type="text" id="txtNum2"></td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                <input type="button" value="+" onclick="add()">
+                <input type="button" value="-" onclick="sub()">
+                <input type="button" value="*" onclick="mul()">
+                <input type="button" value="/" onclick="div()">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"><h1 id="ans"></h1></td>
+        </tr>
+    </table>
+    
+    <script type = "text/javascript">
+            var num1 = document.getElementById("txtNum1");
+            var num2 = document.getElementById("txtNum2");
+            var ansH1 = document.getElementById("ans");
+
+            function add(){
+                a = parseInt(num1.value) + parseInt(num2.value);
+                ansH1.innerHTML = a;
+            }
+
+            function sub(){
+                a = parseInt(num1.value) - parseInt(num2.value);
+                ansH1.innerHTML = a;
+            }
+
+            function mul(){
+                a = parseInt(num1.value) * parseInt(num2.value);
+                ansH1.innerHTML = a;
+            }
+
+            function div(){
+                a = parseInt(num1.value) / parseInt(num2.value);
+                ansH1.innerHTML = a;
+            }
+    </script>
+</body>
+
+</html>

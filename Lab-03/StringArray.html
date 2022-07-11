@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		str1 = prompt("Enter String : ");
+		str2 = prompt("Enter word to find : ");
+
+		myArray = [];
+		myArray = str1.split(" ");
+
+		for (var i = 0; i < myArray.length; i++){
+			if (str2.toLowerCase() === myArray[i].toLowerCase()){
+				document.write("Index of word in string : " + i + '<br>');
+			}
+		}
+	</script>
+</body>
+</html>
